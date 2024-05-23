@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit a Complaint</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Submit a Complaint</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <section class="complaint-form">
+            <h2>Complaint Details</h2>
+            <form action="complaint_submission.php" method="post" enctype="multipart/form-data">
+                <label for="complaintImage">Complaint Image:</label>
+                <input type="file" id="complaintImage" name="complaintImage" accept="image/*" required>
+
+                <label for="complaintDescription">Complaint Description:</label>
+                <textarea id="complaintDescription" name="complaintDescription" rows="4" required></textarea>
+
+                <label for="complaintLocality">Locality:</label>
+                <input type="text" id="complaintLocality" name="complaintLocality" required>
+
+                <label for="governmentOffice">Government Office:</label>
+                <select id="governmentOffice" name="governmentOffice" required>
+                    <option value="railways">Railways</option>
+                    <option value="police">Police Station</option>
+                    <!-- Add more government office options here -->
+                </select>
+
+                <button onclick="D:\mini project sem5.href='complaint_submitted.html';">Submit Complaint</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Complaint Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
